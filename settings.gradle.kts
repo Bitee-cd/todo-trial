@@ -1,0 +1,1 @@
+rootProject.name = "com.bitee.my-todo-app"
