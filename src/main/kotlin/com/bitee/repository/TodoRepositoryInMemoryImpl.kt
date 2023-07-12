@@ -3,7 +3,7 @@ package com.bitee.repository
 import com.bitee.entities.Todo
 import com.bitee.entities.TodoDraft
 
-class TodoRepositoryImpl : TodoRepository {
+class TodoRepositoryInMemoryImpl : TodoRepository {
     private val  todos = mutableListOf<Todo>(
         Todo(1,"this is my first todo",false),
         Todo(2,"Make tea for consumption in the afternoon", true),
@@ -39,3 +39,4 @@ class TodoRepositoryImpl : TodoRepository {
        return todos.removeIf{it.id==id}
     }
 }
+
